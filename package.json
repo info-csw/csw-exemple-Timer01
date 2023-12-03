@@ -1,0 +1,28 @@
+{
+  "name": "testing_template",
+  "version": "1.0.0",
+  "description": "Package for testing web project",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "eslint ./dist/**/*.js && jest && documentation build ./dist/**/*.js -f md ",
+    "testhtml" : "jest",
+    "doc": "documentation build ./dist/**/*.js -f md > ./doc/documentation.md"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "documentation": "^14.0.2",
+    "html-validator": "^6.0.1",
+    "jest": "^29.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.42.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^16.0.0",
+    "eslint-plugin-promise": "^6.1.1"
+  }
+}
